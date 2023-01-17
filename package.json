@@ -1,0 +1,23 @@
+{
+  "name": "peithopy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "imsorry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brentably/peitho-py.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brentably/peitho-py/issues"
+  },
+  "homepage": "https://github.com/Brentably/peitho-py#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "tikapi": "^3.1.1-b"
+  }
+}
