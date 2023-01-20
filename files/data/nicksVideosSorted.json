@@ -4,11 +4,11 @@
       "id": "7065096379357515054",
       "text": "",
       "stats": {
-        "commentCount": 17,
-        "diggCount": 488,
-        "playCount": 2127,
         "shareCount": 28,
-        "engagementRate": 0.25058768218147626
+        "playCount": 2127,
+        "engagementRate": 0.25058768218147626,
+        "diggCount": 488,
+        "commentCount": 17
       },
       "index": 0
     },

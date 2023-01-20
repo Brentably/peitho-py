@@ -2,22 +2,18 @@
 // scripts/getVideFromId.js <ID> verbose --> for all the video information
 
 
-require('dotenv').config({path: '.env.local'})
-const TikAPI = require('tikapi')
+import dotenv from 'dotenv'
+import TikAPI from 'tikapi'
 
-const tik_api_key = process.env.tik_api_key
-const api = TikAPI(tik_api_key);
+dotenv.config({path: '.env.local'})
+const api = TikAPI(process.env.tik_api_key);
 
 
-const id = process.argv[2]
-
-const param = process.argv[3]
-
+export default async function main(id=process.argv[2],param=process.argv[3]) {
 
 if (!id) {
   console.log('Id is not present.');
 }
-
 
 console.log('BRRR... getting info');
 
@@ -33,3 +29,9 @@ console.log('BRRR... getting info');
       console.log(err?.statusCode, err?.message, err?.json)
   }	
 })();
+
+}
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
