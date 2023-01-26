@@ -1,5 +1,7 @@
 .env.local
 
-/files/downloadedVideos
+/files/downloadedVideos/*
+/files/data/hashtagsOrHandlesVideos/*
 
 node_modules
+
